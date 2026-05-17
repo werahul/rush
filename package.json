@@ -1,0 +1,25 @@
+{
+  "name": "rush-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:web": "npm run dev --workspace=@rush/web",
+    "dev:api": "npm run dev --workspace=@rush/api",
+    "build:shared": "npm run build --workspace=@rush/shared",
+    "build": "npm run build:shared && npm run build --workspaces --if-present",
+    "build:web": "npm run build --workspace=@rush/web",
+    "build:api": "npm run build --workspace=@rush/api",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
