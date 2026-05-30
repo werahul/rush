@@ -9,7 +9,7 @@ import { ThemeProvider } from '@/components/providers/theme-provider';
 import { AuthProvider } from '@/components/providers/auth-provider';
 import { ToastProvider } from '@/components/providers/toast-provider';
 import { SmoothScrollProvider } from '@/components/providers/smooth-scroll-provider';
-import { BRAND_IMAGES } from '@/lib/images';
+import { BRAND_IMAGES, PAGE_IMAGES } from '@/lib/images';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'RUSH — Premium Streetwear',
     description: 'Move Fast. Dress Bold.',
-    images: [{ url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d52d?w=1200&q=80' }],
+    images: [{ url: PAGE_IMAGES.hero }],
   },
 };
 

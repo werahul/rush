@@ -16,9 +16,14 @@ const PRODUCTS = [
     tags: ['tee', 'oversized', 'streetwear'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Oversized Street Tee',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [
@@ -45,9 +50,14 @@ const PRODUCTS = [
     tags: ['gym', 'compression', 'activewear'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50c?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Pro Gym Compression Set',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [
@@ -73,9 +83,14 @@ const PRODUCTS = [
     tags: ['joggers', 'cargo', 'streetwear'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Essential Cargo Joggers',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1517462964-21fdcec3f25b?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [
@@ -101,20 +116,86 @@ const PRODUCTS = [
     tags: ['bag', 'accessories', 'crossbody'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Crossbody Utility Bag',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [
       { sku: 'RCB-BLK-OS', size: 'OS', color: 'Black', colorHex: '#000000', stock: 100, price: 1299 },
     ],
     basePrice: 1299,
-    compareAtPrice: 1799,
+    compareAtPrice: 1699,
     rating: 4.6,
     reviewCount: 42,
     isFeatured: true,
     isNewArrival: false,
+  },
+  {
+    name: 'RUSH Monochrome Hoodie',
+    slug: 'rush-monochrome-hoodie',
+    description: 'Heavy fleece hoodie with kangaroo pocket and tonal embroidery. Street essential.',
+    shortDescription: 'Heavy fleece street hoodie',
+    category: 'mens-wear',
+    brand: 'RUSH',
+    tags: ['hoodie', 'streetwear'],
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+        alt: 'RUSH Monochrome Hoodie',
+        isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
+      },
+    ],
+    variants: [
+      { sku: 'RMH-BLK-M', size: 'M', color: 'Black', colorHex: '#000000', stock: 45, price: 2199 },
+      { sku: 'RMH-BLK-L', size: 'L', color: 'Black', colorHex: '#000000', stock: 50, price: 2199 },
+    ],
+    basePrice: 2199,
+    compareAtPrice: 2799,
+    rating: 4.7,
+    reviewCount: 95,
+    isFeatured: true,
+    isNewArrival: true,
+  },
+  {
+    name: 'RUSH Training Shorts',
+    slug: 'rush-training-shorts',
+    description: 'Lightweight training shorts with liner and zip pocket. Built for the gym floor.',
+    shortDescription: 'Lightweight gym training shorts',
+    category: 'gym-outfits',
+    brand: 'RUSH',
+    tags: ['shorts', 'gym'],
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80',
+        alt: 'RUSH Training Shorts',
+        isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
+      },
+    ],
+    variants: [
+      { sku: 'RTS-BLK-M', size: 'M', color: 'Black', colorHex: '#000000', stock: 60, price: 999 },
+      { sku: 'RTS-BLK-L', size: 'L', color: 'Black', colorHex: '#000000', stock: 55, price: 999 },
+    ],
+    basePrice: 999,
+    rating: 4.4,
+    reviewCount: 37,
+    isFeatured: false,
+    isNewArrival: true,
   },
   {
     name: 'RUSH Performance Tank',
@@ -126,9 +207,14 @@ const PRODUCTS = [
     tags: ['tank', 'gym', 'summer'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Performance Tank',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [
@@ -153,9 +239,14 @@ const PRODUCTS = [
     tags: ['cap', 'hat', 'accessories'],
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&q=80',
+        url: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80',
         alt: 'RUSH Snapback Cap',
         isPrimary: true,
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80',
+        alt: 'Alternate view',
+        isPrimary: false,
       },
     ],
     variants: [

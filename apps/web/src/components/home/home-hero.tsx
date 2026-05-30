@@ -71,7 +71,7 @@ export function HomeHero() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-black"
+            className="border-white text-black hover:bg-white hover:text-black"
             asChild
           >
             <Link href="/collections/gym-outfits">Gym Fits</Link>
