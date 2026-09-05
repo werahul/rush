@@ -25,23 +25,22 @@ export const CATEGORY_IMAGES: Record<string, string> = {
 };
 
 export const PRODUCT_IMAGES = {
-  tee: u('photo-1521572267360-ee0c2909d518', 900),
-  teeAlt: u('photo-1583743814966-8936f5b7be1a', 900),
-  hoodie: u('photo-1556821840-3a63f95609a7', 900),
-  hoodieAlt: u('photo-1620799139507-2a76f79a2f4d', 900),
+  tee: u('photo-1571455786673-9d9d6c194f90', 900),
+  teeAlt: u('photo-1610502778270-c5c6f4c7d575', 900),
+  hoodie: u('photo-1647797819874-f51a8a8fc5c0', 900),
+  hoodieAlt: u('photo-1556821840-3a63f95609a7', 900),
   joggers: u('photo-1552902865-b72c031ac5ea', 900),
-  joggersAlt: u('photo-1517462964-21fdcec3f25b', 900),
-  gymSet: u('photo-1581009146145-b5ef050c2e1e', 900),
-  gymSetAlt: u('photo-1517836357463-d25dfeac3438', 900),
-  bag: u('photo-1622560480605-d83c853bc5c3', 900),
-  bagAlt: u('photo-1616422285623-13ff0162193c', 900),
-  tank: u('photo-1517838277536-f5f99be501cd', 900),
-  tankAlt: u('photo-1508214751196-bcfd4ca60f91', 900),
-  shorts: u('photo-1539185441755-769473a23570', 900),
-  shortsAlt: u('photo-1508214751196-bcfd4ca60f91', 900),
-  cap: u('photo-1588850561407-ed78c282e89b', 900),
-  capAlt: u('photo-1521369909029-2afed882baee', 900),
-  sneakers: u('photo-1542291026-7eec264c27ff', 900),
+  joggersAlt: u('photo-1584302052177-2e90841dad6a', 900),
+  gymSet: u('photo-1608217002058-2e45c33b6c2c', 900),
+  gymSetAlt: u('photo-1575898311302-0d04de38c259', 900),
+  bag: u('photo-1620786514684-ff35b5aae55e', 900),
+  bagAlt: u('photo-1668435734515-2396649c7cb4', 900),
+  tank: u('photo-1614367674345-f414b2be3e5b', 900),
+  tankAlt: u('photo-1704223523303-a5ed14561b1f', 900),
+  shorts: u('photo-1579758682665-53a1a614eea6', 900),
+  shortsAlt: u('photo-1591741543032-bf439b4fd46c', 900),
+  cap: u('photo-1737666636073-f15d9762cf83', 900),
+  capAlt: u('photo-1704253801154-e7da0cafd28b', 900),
 } as const;
 
 export function productImageSet(primary: string, alt?: string) {
