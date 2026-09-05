@@ -1,8 +1,10 @@
+import dns from 'dns';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { User, Product, Coupon, Category } from '../models';
 
 dotenv.config();
+dns.setServers(['8.8.8.8', '1.1.1.1', ...dns.getServers()]);
 
 const PRODUCTS = [
   {

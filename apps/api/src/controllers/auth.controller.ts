@@ -12,6 +12,7 @@ import { setAuthCookies, clearAuthCookies } from '../utils/cookies';
 import { sendSuccess, sendError } from '../utils/apiResponse';
 import { asyncHandler } from '../utils/asyncHandler';
 import { AppError } from '../middleware/errorHandler';
+import { sendPasswordResetEmail, sendVerificationEmail } from '../services/email.service';
 import type { AuthRequest } from '../middleware/auth';
 
 export const register = asyncHandler(async (req: AuthRequest, res: Response) => {
@@ -36,6 +37,8 @@ export const register = asyncHandler(async (req: AuthRequest, res: Response) => 
   await user.save({ validateBeforeSave: false });
 
   setAuthCookies(res, accessToken, refreshToken);
+
+  sendVerificationEmail(user.email, emailVerificationToken).catch(() => {});
 
   sendSuccess(
     res,
@@ -130,10 +133,10 @@ export const forgotPassword = asyncHandler(async (req: AuthRequest, res: Respons
   user.passwordResetExpires = new Date(Date.now() + 60 * 60 * 1000);
   await user.save({ validateBeforeSave: false });
 
-  // TODO: Send email with token — structure ready for SMTP integration
   if (process.env.NODE_ENV === 'development') {
     console.log(`[DEV] Password reset token for ${email}: ${token}`);
   }
+  await sendPasswordResetEmail(user.email, token);
 
   sendSuccess(res, null, 200, undefined, 'If email exists, reset link has been sent');
 });

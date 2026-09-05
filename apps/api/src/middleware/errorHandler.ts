@@ -38,6 +38,11 @@ export const errorHandler = (
     return;
   }
 
+  if (err.name === 'MulterError') {
+    sendError(res, err.message, 400);
+    return;
+  }
+
   const statusCode = err.statusCode || 500;
   const message =
     statusCode === 500 && process.env.NODE_ENV === 'production'

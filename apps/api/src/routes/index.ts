@@ -8,6 +8,7 @@ import couponRoutes from './coupon.routes';
 import userRoutes from './user.routes';
 import adminRoutes from './admin.routes';
 import paymentRoutes from './payment.routes';
+import reviewRoutes from './review.routes';
 
 const router = Router();
 
@@ -17,6 +18,7 @@ router.use('/cart', cartRoutes);
 router.use('/orders', orderRoutes);
 router.use('/wishlist', wishlistRoutes);
 router.use('/coupons', couponRoutes);
+router.use('/reviews', reviewRoutes);
 router.use('/users', userRoutes);
 router.use('/admin', adminRoutes);
 router.use('/payments', paymentRoutes);

@@ -24,6 +24,8 @@ const envSchema = z.object({
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
   RAZORPAY_KEY_ID: z.string().optional(),
   RAZORPAY_KEY_SECRET: z.string().optional(),
+  RESEND_API_KEY: z.string().optional(),
+  EMAIL_FROM: z.string().default('RUSH <onboarding@resend.dev>'),
 });
 
 const parsed = envSchema.safeParse(process.env);
@@ -48,4 +50,5 @@ export const env = parsed.success
       JWT_REFRESH_EXPIRES_IN: '7d',
       COOKIE_DOMAIN: 'localhost',
       COOKIE_SECURE: false,
+      EMAIL_FROM: 'RUSH <onboarding@resend.dev>',
     } as z.infer<typeof envSchema>);
